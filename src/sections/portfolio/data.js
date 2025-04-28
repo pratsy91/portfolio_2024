@@ -8,7 +8,7 @@ const data = [
     image: Image1,
     title: "E-Store",
     desc: "A full-stack app for browsing products, managing carts, and processing payments securely.",
-    demo: "https://e-store-g0du.onrender.com/",
+    demo: "https://e-store-hq5z.onrender.com/",
     github: "https://github.com/pratsy91/e-store",
   },
   {
@@ -17,7 +17,7 @@ const data = [
     image: Image2,
     title: "Realtime Chat",
     desc: "A real-time messaging app for sending text, emojis, and images with secure authentication.",
-    demo: "https://chat-app-dps0.onrender.com/",
+    demo: "https://chatapp-16yr.onrender.com/",
     github: "https://github.com/pratsy91/chatApp",
   },
 ];
