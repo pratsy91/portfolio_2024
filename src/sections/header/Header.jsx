@@ -22,7 +22,7 @@ const Header = () => {
           scalable, and reliable software solutions. Dedicated to delivering
           efficient, tailored solutions with modern technologies.
         </p>
-        <div className="header__cta" data-aos="fade-up">
+        <div className="header__cta" data-aos="fade-up" id="experience">
           <a href="#contact" className="btn primary">
             Let's Talk
           </a>
