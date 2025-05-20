@@ -7,11 +7,11 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section id="about" data-aos="fade-in">
+    <section id="about">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="About Image" />
+            <img src={AboutImage} alt="About" />
           </div>
         </div>
         <div className="about__right">
@@ -26,19 +26,25 @@ const About = () => {
             ))}
           </div>
           <p>
-            Building projects my clients love have always been my passion. Being
-            in the web development industry for over 1 year and serving more
-            than 30 happy clients worldwide, I'm always motivated to do more!
+            Results-driven Software Engineer with proven experience in
+            designing, developing, and optimizing scalable web applications and
+            backend services. Skilled in modern technologies including React.js,
+            Node.js, TypeScript, Express, and cloud platforms such as AWS.
           </p>
           <p>
-            Hi, my name is Pratap Singh Chouhan. I'm a full-stack web developer
-            with a Bachelors degree in Computer Science. My top priority is to
-            get your business online the right way, giving you industry-standard
-            design and all the functionality you need to operate smoothly
-            online. Get in touch today with the details of your project let's
-            get started! Check out my resume below!
+            Known for driving performance improvements, reducing system
+            bottlenecks, and delivering clean, maintainable code. Experienced in
+            leading end-to-end feature development, integrating complex APIs,
+            and contributing to high-impact engineering teams in agile
+            environments.
           </p>
-          <a href={CV} download className="btn primary">
+          <p>
+            Committed to continuous learning and delivering robust technical
+            solutions aligned with business objectives. Demonstrates a strong
+            understanding of system architecture, data modeling, security
+            practices, and CI/CD pipelines.
+          </p>
+          <a href={CV} download className="btn primary" id="random">
             Download CV <HiDownload />
           </a>
         </div>

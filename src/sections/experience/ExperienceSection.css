@@ -1,0 +1,117 @@
+.experience__section {
+  padding: 4rem 2rem;
+  background: var(--color-white);
+  color: var(--color-black);
+  transition: var(--transition);
+}
+
+.experience__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--color-black);
+}
+
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card.experience__card {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow-light);
+  transition: var(--transition);
+  color: var(--color-black);
+  cursor: pointer;
+  position: relative; /* Added for better positioning of pseudo-elements */
+}
+
+/* Hover effect */
+.card.experience__card:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.card.experience__card:hover .experience__company,
+.card.experience__card:hover .experience__duration,
+.card.experience__card:hover .experience__role,
+.card.experience__card:hover .experience__points li {
+  color: var(--color-white);
+}
+
+.experience__company {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--color-black);
+}
+
+.experience__duration {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.experience__role {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.experience__points {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.experience__points li {
+  margin-bottom: 0.6rem;
+  color: var(--color-black);
+}
+
+/* Dark Theme Support */
+body.dark-theme .experience__section {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+body.dark-theme .card.experience__card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent background for cards */
+  color: var(--color-white);
+  box-shadow: var(--box-shadow-dark);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to demarcate cards */
+  backdrop-filter: blur(8px); /* Optional: for frosted glass effect */
+}
+
+/* Hover effect for dark theme */
+body.dark-theme .card.experience__card:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Responsive: Tablet */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* Responsive: Phone */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__title {
+    font-size: 1.8rem;
+  }
+}

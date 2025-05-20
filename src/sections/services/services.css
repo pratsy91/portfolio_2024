@@ -1,51 +1,174 @@
-.services__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 4rem;
+/* General Section Styling */
+#services {
+  padding: 3rem 1rem; /* Reduced padding for less space */
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
-.card.service {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.service__icon {
-    background: var(--color-primary);
-    padding: 0.6rem;
-    border-radius: var(--border-radius-3);
-    font-size: 1.5rem;
-    color: var(--color-white);
-    transition: var(--transition);
+.tech-stack-section h2 {
+  font-size: 2.5rem; /* Slightly smaller font size */
+  margin-bottom: 1rem;
+  color: var(--color-black);
+  font-family: "Arial", sans-serif;
 }
 
-.service:hover .service__icon {
-    background: var(--color-light);
-    color: var(--color-primary);
+.tech-stack-section p {
+  font-size: 1.1rem; /* Smaller font size */
+  color: var(--color-dark);
+  margin-bottom: 2rem; /* Reduced space between text and icons */
 }
 
-.service h4 {
-    margin-bottom: 0.7rem;
+/* Tech Stack Container */
+.tech-stack-container {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute space */
+  gap: 2rem; /* Reduced gap */
+  flex-wrap: wrap;
+  margin-top: 2rem; /* Less top margin */
 }
 
+.tech-section {
+  width: 45%; /* Reduced width */
+  text-align: center;
+  margin-bottom: 1.5rem; /* Reduced bottom margin */
+}
 
+.tech-section h3 {
+  font-size: 1.7rem; /* Slightly smaller font size */
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
 
-/* MEDIA QUERIES (tablets) */
+/* Tech Icons */
+.tech-icons {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Show only 2 icons by default */
+  gap: 1rem; /* Reduced gap between icons */
+  justify-items: center;
+  margin-top: 1.5rem; /* Reduced top margin */
+  margin-inline: auto;
+}
+
+.tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.tech-icon {
+  font-size: 4.5rem; /* Icon size */
+  padding: 1.2rem; /* Extra padding for better spacing */
+  width: 6rem; /* Set width */
+  height: 6rem; /* Set height for square shape */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Soft initial background color */
+  filter: brightness(0.8);
+  color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem; /* Slightly rounded corners for modern look */
+  opacity: 0.8; /* Initially faded */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition for background color and opacity */
+}
+
+/* Hover effects for icons with glowing effect */
+.tech-icon:hover {
+  filter: brightness(1.3); /* Glow effect using filter */
+  color: #ffffff; /* Brighten icon color on hover */
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Tech Icon Name */
+.tech-name {
+  font-size: 0.95rem; /* Smaller font size */
+  margin-top: 0.3rem; /* Reduced space between icon and name */
+  color: var(--color-dark);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Tech Icon Color Styles */
+.react {
+  background-color: #61dafb;
+}
+
+.redux {
+  background-color: #764abc;
+}
+
+.nextjs {
+  background-color: #000000;
+}
+
+.tailwind {
+  background-color: #38bdf8;
+}
+
+.nodejs {
+  background-color: #68a063;
+}
+
+.express {
+  background-color: #000000;
+}
+
+.mongodb {
+  background-color: #47a248;
+}
+
+.postgresql {
+  background-color: #336791;
+}
+
+/* Hover Effects */
+.tech-icon-container:hover .tech-name {
+  opacity: 1;
+}
+
+/* Media Queries */
 @media screen and (max-width: 1024px) {
-    .services__container {
-        gap: 1.5rem;
-    }
+  .tech-icons {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 1rem;
+  }
+
+  .tech-stack-section h2 {
+    font-size: 2.3rem; /* Smaller text for medium screens */
+  }
+
+  .tech-section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
-
-/* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
-    .services__container {
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
+  .tech-icons {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 1rem;
+  }
 
-    .card.service {
-        gap: 1.2rem;
-    }
+  .tech-stack-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .tech-name {
+    font-size: 0.9rem; /* Smaller text for smaller screens */
+  }
+
+  .tech-icon {
+    font-size: 4rem; /* Slightly smaller icons on small screens */
+  }
 }
