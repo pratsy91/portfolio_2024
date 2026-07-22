@@ -16,38 +16,29 @@ const App = () => {
   const { themeState } = useThemeContext();
 
   const mainRef = useRef();
+  const siteYPositionRef = useRef(0);
   const [showFloatingNav, setShowFloatingNav] = useState(true);
-  const [siteYPostion, setSiteYPosition] = useState(0);
-
-  const showFloatingNavHandler = () => {
-    setShowFloatingNav(true);
-  };
-
-  const hideFloatingNavHandler = () => {
-    setShowFloatingNav(false);
-  };
-
-  // check if floating nav should be shown or hidden
-  const floatingNavToggleHandler = () => {
-    // check if we scrolled up or down at least 20px
-    if (
-      siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
-      siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
-    ) {
-      showFloatingNavHandler();
-    } else {
-      hideFloatingNavHandler();
-    }
-
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
-  };
 
   useEffect(() => {
-    const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
+    const floatingNavToggleHandler = () => {
+      const currentY = mainRef.current?.getBoundingClientRect().y ?? 0;
 
-    // cleanup function
+      // show floating nav when scrolled at least 20px
+      if (
+        siteYPositionRef.current < currentY - 20 ||
+        siteYPositionRef.current > currentY + 20
+      ) {
+        setShowFloatingNav(true);
+      } else {
+        setShowFloatingNav(false);
+      }
+
+      siteYPositionRef.current = currentY;
+    };
+
+    const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
     return () => clearInterval(checkYPosition);
-  }, [siteYPostion]);
+  }, []);
 
   return (
     <main
