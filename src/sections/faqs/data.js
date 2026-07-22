@@ -27,7 +27,7 @@ const data = [
     id: 5,
     question: "What technologies and tools are you comfortable with?",
     answer:
-      "I have hands-on experience with React, Node.js, TypeScript, REST APIs, MongoDB, AWS, Git, and CI/CD tools. I'm quick to adapt to new frameworks and enjoy learning emerging technologies when required.",
+      "I have hands-on experience with React.js, React Native, Next.js, TypeScript, Node.js, Express, Django, NestJS, PostgreSQL, MongoDB, Docker, AWS, GCP, and CI/CD tools. I'm quick to adapt to new frameworks and enjoy learning emerging technologies when required.",
   },
   {
     id: 6,

@@ -47,9 +47,9 @@
 
 /* Tech Icons */
 .tech-icons {
-  max-width: 300px;
+  max-width: 360px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Show only 2 icons by default */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem; /* Reduced gap between icons */
   justify-items: center;
   margin-top: 1.5rem; /* Reduced top margin */
@@ -130,6 +130,38 @@
 
 .postgresql {
   background-color: #336791;
+}
+
+.typescript {
+  background-color: #3178c6;
+}
+
+.django {
+  background-color: #092e20;
+}
+
+.nestjs {
+  background-color: #e0234e;
+}
+
+.graphql {
+  background-color: #e10098;
+}
+
+.mysql {
+  background-color: #4479a1;
+}
+
+.docker {
+  background-color: #2496ed;
+}
+
+.aws {
+  background-color: #ff9900;
+}
+
+.gcp {
+  background-color: #4285f4;
 }
 
 /* Hover Effects */

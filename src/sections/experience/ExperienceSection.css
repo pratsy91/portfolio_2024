@@ -3,6 +3,7 @@
   background: var(--color-white);
   color: var(--color-black);
   transition: var(--transition);
+  scroll-margin-top: 6rem;
 }
 
 .experience__title {

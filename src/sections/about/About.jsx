@@ -26,23 +26,23 @@ const About = () => {
             ))}
           </div>
           <p>
-            Results-driven Software Engineer with proven experience in
-            designing, developing, and optimizing scalable web applications and
-            backend services. Skilled in modern technologies including React.js,
-            Node.js, TypeScript, Express, and cloud platforms such as AWS.
+            Results-driven Software Engineer with proven experience designing,
+            developing, and optimizing scalable web and mobile applications.
+            Skilled in React.js, React Native, Next.js, Node.js, Django,
+            TypeScript, PostgreSQL, and cloud platforms such as AWS and GCP.
           </p>
           <p>
-            Known for driving performance improvements, reducing system
-            bottlenecks, and delivering clean, maintainable code. Experienced in
-            leading end-to-end feature development, integrating complex APIs,
-            and contributing to high-impact engineering teams in agile
-            environments.
+            Known for owning end-to-end feature development—from frontend UI to
+            backend APIs—while driving measurable gains in performance,
+            engagement, and reliability. Experienced integrating complex
+            third-party APIs, building analytics dashboards, and shipping secure,
+            maintainable systems at scale.
           </p>
           <p>
             Committed to continuous learning and delivering robust technical
-            solutions aligned with business objectives. Demonstrates a strong
-            understanding of system architecture, data modeling, security
-            practices, and CI/CD pipelines.
+            solutions aligned with business goals. Strong understanding of
+            system architecture, data modeling, security practices, and CI/CD
+            pipelines.
           </p>
           <a href={CV} download className="btn primary" id="random">
             Download CV <HiDownload />
