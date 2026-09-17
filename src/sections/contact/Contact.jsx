@@ -1,20 +1,28 @@
-import contacts from './data'
-import './contact.css'
+import contacts from "./data";
+import "./contact.css";
 
 const Contact = () => {
   return (
     <section id="contact">
-      <h2>Get In Touch</h2>
+      <h2>Let&apos;s Build Something</h2>
       <p>
-        Shoot me a message via any of the links below!
+        Open to full-stack roles and interesting product work. Email or WhatsApp
+        me — I usually reply within a day.
       </p>
       <div className="container contact__container" data-aos="fade-up">
-        {
-          contacts.map(contact => <a key={contact.id} href={contact.link} target="_blank" rel="noopener noreferrer">{contact.icon}</a>)
-        }
+        {contacts.map((contact) => (
+          <a
+            key={contact.id}
+            href={contact.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.icon}
+          </a>
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,39 +1,27 @@
 const data = [
   {
     id: 1,
-    question: "What is your approach to starting a new project?",
+    question: "How do I usually start a project?",
     answer:
-      "The process begins with a thorough understanding of the business requirements, followed by technical analysis, feasibility assessment, and identifying potential architecture and stack options. Clear planning ensures alignment from day one.",
+      "I align on the problem, users, and constraints first — then propose a lean architecture and stack that can ship quickly without painting us into a corner.",
   },
   {
     id: 2,
-    question: "How do you estimate timelines and manage deadlines?",
+    question: "What does end-to-end ownership look like?",
     answer:
-      "Timelines are derived after assessing the scope, dependencies, and resource availability. I break tasks into sprints or milestones, using agile practices to ensure progress is trackable and adaptable to change.",
+      "I take features from UI through APIs, data models, and deployment — including reviews, performance checks, and handoff notes so the system stays maintainable.",
   },
   {
     id: 3,
-    question: "How do you ensure code quality and maintainability?",
+    question: "How do you keep quality high under deadlines?",
     answer:
-      "I follow clean code principles, modular architecture, and maintain full test coverage using unit/integration tests. Peer reviews and automated CI/CD pipelines are integrated to ensure consistent code quality.",
+      "Clear milestones, small shippable slices, automated checks where they matter, and pragmatic trade-offs documented so quality doesn’t silently erode.",
   },
   {
     id: 4,
-    question: "How do you handle cross-functional collaboration?",
+    question: "What kinds of roles am I looking for?",
     answer:
-      "I regularly collaborate with product managers, designers, and QA engineers using tools like Jira, Figma, and Slack. I prioritize clear communication and ensure that technical decisions align with business goals.",
-  },
-  {
-    id: 5,
-    question: "What technologies and tools are you comfortable with?",
-    answer:
-      "I have hands-on experience with React.js, React Native, Next.js, TypeScript, Node.js, Express, Django, NestJS, PostgreSQL, MongoDB, Docker, AWS, GCP, and CI/CD tools. I'm quick to adapt to new frameworks and enjoy learning emerging technologies when required.",
-  },
-  {
-    id: 6,
-    question: "How do you handle changing requirements?",
-    answer:
-      "I treat feedback as an opportunity for alignment and improvement. I'm used to iterative development cycles, and I'm comfortable adapting to evolving requirements while maintaining system integrity.",
+      "Full-stack or product-focused engineering roles where I can own meaningful features across React/Next/React Native and modern backend stacks.",
   },
 ];
 

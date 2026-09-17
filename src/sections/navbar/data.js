@@ -1,10 +1,10 @@
 const data = [
-  { id: 1, link: "#", title: "Home" },
-  { id: 1, link: "#experience", title: "Work Experience" },
+  { id: 1, link: "#header", title: "Home" },
   { id: 2, link: "#about", title: "About" },
-  { id: 3, link: "#random", title: "Technologies" },
-  { id: 4, link: "#portfolio", title: "Projects" },
-  { id: 5, link: "#contact", title: "Contact" },
+  { id: 3, link: "#services", title: "Skills" },
+  { id: 4, link: "#experience", title: "Experience" },
+  { id: 5, link: "#portfolio", title: "Projects" },
+  { id: 6, link: "#contact", title: "Contact" },
 ];
 
 export default data;

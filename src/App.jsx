@@ -23,7 +23,6 @@ const App = () => {
     const floatingNavToggleHandler = () => {
       const currentY = mainRef.current?.getBoundingClientRect().y ?? 0;
 
-      // show floating nav when scrolled at least 20px
       if (
         siteYPositionRef.current < currentY - 20 ||
         siteYPositionRef.current > currentY + 20
@@ -47,11 +46,10 @@ const App = () => {
     >
       <Navbar />
       <Header />
-      <ExperienceSection />
       <About />
       <Services />
+      <ExperienceSection />
       <Portfolio />
-      {/* <Testimonials /> */}
       <FAQs />
       <Contact />
       <Footer />

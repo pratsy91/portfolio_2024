@@ -18,50 +18,68 @@ import {
 } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 
+const stack = [
+  {
+    title: "Frontend",
+    items: [
+      { icon: <SiReact />, name: "React / RN", className: "react" },
+      { icon: <SiRedux />, name: "Redux", className: "redux" },
+      { icon: <SiNextdotjs />, name: "Next.js", className: "nextjs" },
+      { icon: <SiTailwindcss />, name: "Tailwind", className: "tailwind" },
+      { icon: <SiTypescript />, name: "TypeScript", className: "typescript" },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      { icon: <DiNodejs />, name: "Node.js", className: "nodejs" },
+      { icon: <SiExpress />, name: "Express", className: "express" },
+      { icon: <SiDjango />, name: "Django", className: "django" },
+      { icon: <SiNestjs />, name: "NestJS", className: "nestjs" },
+      { icon: <SiGraphql />, name: "GraphQL", className: "graphql" },
+    ],
+  },
+  {
+    title: "Databases",
+    items: [
+      { icon: <SiPostgresql />, name: "PostgreSQL", className: "postgresql" },
+      { icon: <SiMysql />, name: "MySQL", className: "mysql" },
+      { icon: <SiMongodb />, name: "MongoDB", className: "mongodb" },
+    ],
+  },
+  {
+    title: "Tools & Cloud",
+    items: [
+      { icon: <SiDocker />, name: "Docker", className: "docker" },
+      { icon: <SiAmazonaws />, name: "AWS", className: "aws" },
+      { icon: <SiGooglecloud />, name: "GCP", className: "gcp" },
+    ],
+  },
+];
+
 const TechnologyStack = () => {
   return (
     <section id="services">
-      <h2>Technology Stack</h2>
-      <div className="tech-stack-container">
-        <div className="tech-section">
-          <h3>Frontend</h3>
-          <div className="tech-icons">
-            <SiReact className="tech-icon react" title="React.js / React Native" />
-            <SiRedux className="tech-icon redux" title="Redux" />
-            <SiNextdotjs className="tech-icon nextjs" title="Next.js" />
-            <SiTailwindcss className="tech-icon tailwind" title="Tailwind CSS" />
-            <SiTypescript className="tech-icon typescript" title="TypeScript" />
+      <h2>Skills & Stack</h2>
+      <p>
+        Tools I use daily to design, build, and ship production software.
+      </p>
+      <div className="container tech-stack-container">
+        {stack.map((group) => (
+          <div className="tech-section" key={group.title}>
+            <h3>{group.title}</h3>
+            <div className="tech-icons">
+              {group.items.map((item) => (
+                <div className="tech-icon-container" key={item.name}>
+                  <span className={`tech-icon ${item.className}`} title={item.name}>
+                    {item.icon}
+                  </span>
+                  <span className="tech-name">{item.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className="tech-section">
-          <h3>Backend</h3>
-          <div className="tech-icons">
-            <DiNodejs className="tech-icon nodejs" title="Node.js" />
-            <SiExpress className="tech-icon express" title="Express.js" />
-            <SiDjango className="tech-icon django" title="Django" />
-            <SiNestjs className="tech-icon nestjs" title="NestJS" />
-            <SiGraphql className="tech-icon graphql" title="GraphQL" />
-          </div>
-        </div>
-
-        <div className="tech-section">
-          <h3>Databases</h3>
-          <div className="tech-icons">
-            <SiPostgresql className="tech-icon postgresql" title="PostgreSQL" />
-            <SiMysql className="tech-icon mysql" title="MySQL" />
-            <SiMongodb className="tech-icon mongodb" title="MongoDB" />
-          </div>
-        </div>
-
-        <div className="tech-section">
-          <h3>Tools & Cloud</h3>
-          <div className="tech-icons">
-            <SiDocker className="tech-icon docker" title="Docker" />
-            <SiAmazonaws className="tech-icon aws" title="AWS" />
-            <SiGooglecloud className="tech-icon gcp" title="GCP" />
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="About" />
+            <img src={AboutImage} alt="About Pratap" />
           </div>
         </div>
         <div className="about__right">
@@ -26,25 +26,15 @@ const About = () => {
             ))}
           </div>
           <p>
-            Results-driven Software Engineer with proven experience designing,
-            developing, and optimizing scalable web and mobile applications.
-            Skilled in React.js, React Native, Next.js, Node.js, Django,
-            TypeScript, PostgreSQL, and cloud platforms such as AWS and GCP.
+            Software engineer focused on shipping end-to-end features — React /
+            React Native / Next.js on the frontend, Node / Django / NestJS on the
+            backend — with clean architecture and measurable impact.
           </p>
           <p>
-            Known for owning end-to-end feature development—from frontend UI to
-            backend APIs—while driving measurable gains in performance,
-            engagement, and reliability. Experienced integrating complex
-            third-party APIs, building analytics dashboards, and shipping secure,
-            maintainable systems at scale.
+            I care about performance, maintainable systems, and products that
+            feel fast and reliable for real users.
           </p>
-          <p>
-            Committed to continuous learning and delivering robust technical
-            solutions aligned with business goals. Strong understanding of
-            system architecture, data modeling, security practices, and CI/CD
-            pipelines.
-          </p>
-          <a href={CV} download className="btn primary" id="random">
+          <a href={CV} download className="btn primary">
             Download CV <HiDownload />
           </a>
         </div>
